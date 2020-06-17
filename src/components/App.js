@@ -10,7 +10,10 @@ class App extends Component {
       <div className="App">
         <Switch>
           <Route path="/fortune/:name&:birthday" component={Fortune} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/main" component={Main} />
         </Switch>
+        <div><Link to="/main">main</Link></div>
       </div>
     );
   }
